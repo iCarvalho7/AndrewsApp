@@ -1,0 +1,3 @@
+class PredictionModel {
+  toEntity() {}
+}
