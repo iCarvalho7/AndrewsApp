@@ -1,4 +1,5 @@
 import 'package:andrews_app/data/di/di.dart';
+import 'package:andrews_app/data/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:andrews_app/routes.dart';
 import 'package:flutter/cupertino.dart';
@@ -27,6 +28,8 @@ class _AndrewsAppState extends State<AndrewsApp> {
       debugShowCheckedModeBanner: false,
       routes: RoutesController.routes,
       initialRoute: Routes.main.tag,
+      theme: AppColors.lightMode,
+      darkTheme: AppColors.darkMode,
     );
   }
 }
