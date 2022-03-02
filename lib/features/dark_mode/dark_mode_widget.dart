@@ -17,10 +17,10 @@ class _DarkModeButtonState extends State<DarkModeButton> {
     return Obx(
       () => FlutterSwitch(
         activeToggleColor: Colors.white,
-        activeIcon: const Icon(Icons.wb_sunny),
-        inactiveIcon: const Icon(Icons.dark_mode),
-        activeColor: const Color(0xFF034B62),
-        inactiveColor: const Color(0x22FFFFFF),
+        activeIcon: const Icon(Icons.dark_mode),
+        inactiveIcon: const Icon(Icons.wb_sunny),
+        activeColor: const Color(0x22FFFFFF),
+        inactiveColor: const Color(0xFF034B62),
         value: isDarkModeEnabled.value,
         onToggle: (active) {
           isDarkModeEnabled.value = active;
@@ -32,6 +32,6 @@ class _DarkModeButtonState extends State<DarkModeButton> {
 
   void _changeTheme() async {
     Get.changeThemeMode(
-        !isDarkModeEnabled.value ? ThemeMode.dark : ThemeMode.light);
+        isDarkModeEnabled.value ? ThemeMode.dark : ThemeMode.light);
   }
 }

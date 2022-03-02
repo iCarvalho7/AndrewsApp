@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 
 class RoutesController {
   static final Map<Routes, WidgetBuilder> _routes = {
-    Routes.main : (_) => const SearchVersePage()
+    Routes.main : (_) => SearchVersePage()
   };
 
   static Map<String, WidgetBuilder> get routes {
