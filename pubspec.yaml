@@ -72,12 +72,6 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
    - assets/images/andrews_face_icon.svg
-   - assets/images/book_pencil_dark.svg
-   - assets/images/book_and_pencil_light.svg
-   - assets/images/holly_bible_dark.svg
-   - assets/images/holy_bible_light.svg
-   - assets/images/speech_to_text_dark.svg
-   - assets/images/speech_to_text_light.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
