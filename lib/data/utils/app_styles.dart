@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 mixin AppStyles {
   static const TextStyle titleStyle = TextStyle(
     fontSize: 24,
-    fontWeight: FontWeight.bold
+    fontWeight: FontWeight.bold,
   );
 
   static const TextStyle subTitleStyle = TextStyle(

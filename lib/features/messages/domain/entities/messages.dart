@@ -19,8 +19,8 @@ class Message {
 
   Message({
     required this.isQuestion,
-    required this.title,
+    this.title = '',
     this.versesList = const <ItemVerse>[],
-    this.description = '',
+    required this.description,
   });
 }

@@ -19,6 +19,7 @@ mixin AppColors {
         secondaryHeaderColor: const Color(0xFF12C29F),
         cardColor: Colors.white,
         backgroundColor: kBackgroundLightMode,
+        iconTheme: const IconThemeData(color: Colors.black),
         textTheme: GoogleFonts.poppinsTextTheme(),
       );
 
@@ -30,6 +31,8 @@ mixin AppColors {
         secondaryHeaderColor: const Color(0xFF0C705C),
         cardColor: const Color(0xFF1E2D33),
         backgroundColor: kBackgroundDarkMode,
-        textTheme: GoogleFonts.poppinsTextTheme().apply(bodyColor: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.white),
+        textTheme:
+            GoogleFonts.poppinsTextTheme().apply(bodyColor: Colors.white),
       );
 }

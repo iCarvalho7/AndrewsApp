@@ -17,6 +17,7 @@ mixin Numbers {
   static const double fourteen = 14;
   static const double fifteen = 15;
   static const double twenty = 20;
+  static const double thirty = 30;
   static const double forty = 40;
 }
 

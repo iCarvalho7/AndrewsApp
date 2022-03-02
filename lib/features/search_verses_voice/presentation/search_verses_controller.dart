@@ -140,7 +140,7 @@ class MainController extends GetxController
 
   void _addQuestionMessage() {
     messageList.add(
-        Message(isQuestion: true, title: predictionResponse.completeSentence));
+        Message(isQuestion: true, description: query.value));
   }
 
   void _addResponseMessage() {

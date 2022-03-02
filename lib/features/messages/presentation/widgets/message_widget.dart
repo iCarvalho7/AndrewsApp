@@ -68,16 +68,16 @@ class MessageCardWidget extends StatelessWidget {
                     ? CrossAxisAlignment.start
                     : CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    message.title,
-                    style: AppStyles.titleStyle,
-                  ),
                   Visibility(
                     visible: !message.isQuestion,
-                    child: Column(
-                      children: message.formattedVerses
+                    child: Text(
+                      message.title,
+                      style: AppStyles.titleStyle,
                     ),
                   ),
+                  !message.isQuestion ? Column(
+                    children: message.formattedVerses
+                  ) : Text(message.description)
                 ],
               ),
             ),
@@ -96,9 +96,9 @@ class MessageCardWidget extends StatelessWidget {
       );
     } else {
       return const BorderRadius.only(
-        topRight: Radius.circular(Numbers.twenty),
-        topLeft: Radius.circular(Numbers.twenty),
-        bottomLeft: Radius.circular(Numbers.twenty),
+        topRight: Radius.circular(Numbers.teen),
+        topLeft: Radius.circular(Numbers.teen),
+        bottomLeft: Radius.circular(Numbers.teen),
       );
     }
   }
